@@ -21,7 +21,7 @@
             var arrayOfFood = splitCsv(foodInApp);
 
             if(arrayOfFood.length > 3) {
-                $scope.message = 'Too much!';
+                $scope.message = 'Too much!'; 
             } else {
                 $scope.message = 'Enjoy!';
             }
