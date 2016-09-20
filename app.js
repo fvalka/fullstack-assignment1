@@ -14,14 +14,14 @@
             var foodInApp = $scope.food;
 
             if(foodInApp === undefined || foodInApp == '') {
-                $scope.message = 'Please provide some food!';
+                $scope.message = 'Please enter data first';
                 return;
             }
 
             var arrayOfFood = splitCsv(foodInApp);
 
             if(arrayOfFood.length > 3) {
-                $scope.message = 'Too much!'; 
+                $scope.message = 'Too much!';
             } else {
                 $scope.message = 'Enjoy!';
             }
